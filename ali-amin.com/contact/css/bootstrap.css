@@ -6156,3 +6156,18 @@ a.badge:focus {
 .affix {
   position: fixed;
 }
+
+.contactIcon {
+  padding:10px; 
+  width:40%;
+}
+
+
+.contactIcon:hover {
+  width:42%;
+}
+
+
+
+
+

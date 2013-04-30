@@ -31,7 +31,6 @@
   </head>
 
 
-
   <body>
     <div class="container">
       <div class="navbar navbar-inverse">
@@ -57,60 +56,82 @@
 
       <!-- Main hero unit for a primary marketing message or call to action -->
       <div class="hero-unit" style="border:5px; background-color:white; border-style:solid;border-color:#1B1B1B;">
+
+
+
+
       <div class="row-fluid"> 
-        <div class="span6">
-              <h1>Hi, I'm Ali Amin</h1>
-              <p>A current engineering student, I am passionate about building things and doing work that has an impact.</p>
-              <img src="img/main.png" class="img-rounded">
+        <div class="span8">
+              <h1>Get in touch!</h1>
+              <br>
+              <form method="POST" action="contact-form-submission.php">
+              <fieldset>
+
+              <div class="control-group">    
+                  <label class="control-label" for="input1"><i class="icon-user"></i> Full Name</label>
+                  <div class="controls"><input class="span12" type="text" name="contact_name" id="input1" placeholder="Jane Doe"></div>
+              </div>
+
+              <div class="control-group">    
+                  <label class="control-label" for="input2"><i class="icon-envelope"></i> Email </label>
+                  <div class="controls"><input class="span12" type="text" name="contact_email" id="input2" placeholder="janedoe@example.com"></div>
+              </div>
+
+              <div class="control-group">    
+                  <label class="control-label" for="input3"><i class="icon-pencil"></i> Message</label>
+                  <div class="controls"><textarea class="span12" rows="8" type="text" name="contact_message" id="input3" placeholder="What's on your mind?"></textarea></div>
+              </div>
+
+<?php  
+  
+        // check for a successful form post  
+        if (isset($_GET['s'])) echo "<div class=\"alert alert-success\">".$_GET['s']."</div>";  
+  
+        // check for a form error  
+        elseif (isset($_GET['e'])) echo "<div class=\"alert alert-error\">".$_GET['e']."</div>";  
+  
+?>  
+                <input type="hidden" name="save" value="contact">  
+                <button type="submit" class="btn btn-primary">Submit</button>  
+
+              </fieldset>
+              </form>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="span3 offset1">
+          <div class="row">
+            <a href="https://www.facebook.com/ali.amin1992"><img class="contactIcon" src="img/facebook.png"></a>
+            <a href="mailto:aliamin@outlook.com?Subject=Hi%20Ali"><img class="contactIcon" src="img/email.png"></a>
+          </div>
+          <div class="row">
+            <a href="http://www.linkedin.com/in/amamin"><img class="contactIcon" src="img/linkedin.png"></a>
+            <a href="https://plus.google.com/110838744880801234696/posts"><img class="contactIcon" src="img/googleplus-revised.png"></a>
+          </div>
         </div>
 
-        <div class="span6">
-          <div class="row"><a href="http://www.ali-amin.com/resume/">
-            <div class="span12 offset3 extlinks well">
-                <h2>Resume</h2>
-                <p>Things I've done and things I'm currently working on.</p>
-            </div>
-          </div></a>
-        <br>
-          <div class="row"><a href="http://www.ali-amin.com/blog/">
-            <div class="span12 extlinks offset3 well">
-                <h2>Blog</h2>
-                <p>Stuff I write about.</p>
-            </div>
-          </div></a>
-        <br>  
-          <div class="row"><a href="http://www.ali-amin.com/contact/">
-            <div class="span12 extlinks offset3 well">
-                <h2>Contact</h2>
-                <p>Get in touch!</p>
-            </div>
-          </div></a>
-        </div>      
-    
+
+
     </div><!-- /row -->
+
     </div><!-- /hero-unit -->
-<!--    
-    <div class="span12 text-center">
-          <img style="padding:2px; width:3%;" src="img/facebook.png">   <img style="padding:2px; width:3%;" src="img/email.png">
-          <img style="padding:2px; width:3%;" src="img/linkedin.png"><img style="padding:2px; width:3%;" src="img/googleplus-revised.png">
-    </div>
--->
-    <hr>
+      <hr>
+
       <footer>
-        <p>&copy; Ali Amin 2013  
-          <a href="https://www.facebook.com/ali.amin1992"><img class="social pull-right" src="img/facebookIcon.png"></a>
-          <a href="mailto:aliamin@outlook.com?Subject=Hi%20Ali"><img class="social pull-right" src="img/emailIcon.png"></a>
-          <a href="http://www.linkedin.com/in/amamin"><img class="social pull-right" src="img/linkedinIcon.png"></a>
-          <a href="https://plus.google.com/110838744880801234696/posts"><img class="social pull-right" src="img/googleplus-revisedIcon.png"></a>
-        </p>
+        <p>&copy; Ali Amin 2013</p>
       </footer>
 
     </div> <!-- /container -->
-        <!-- Le javascript
+  <!-- Le javascript
   ================================================== -->
   <!-- Placed at the end of the document so the pages load faster -->
   <script src="js/jquery-1.9.1.min.js" type="text/javascript"></script>
   <script src="js/bootstrap.min.js" type="text/javascript"></script>
-  <script src="js/myscript.js" type="text/javascript"></script>
   </body>
 </html>
+
+
+
+

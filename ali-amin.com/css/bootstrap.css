@@ -6156,3 +6156,33 @@ a.badge:focus {
 .affix {
   position: fixed;
 }
+
+/*My personally added css*/
+.imagedropshadow {
+  padding: 3px;
+  border: solid 0px #EFEFEF;
+}
+.extlinks {
+  background-color:#FFFFFF;
+  border-radius:6px; 
+  padding:10px;
+  border-style:solid;
+  border-color:#000000;
+}
+
+
+
+.extlinks:hover {
+  border: solid 3px #000000;
+  -moz-box-shadow: 2px 2px 5px #999;
+  -webkit-box-shadow: 2px 2px 5px #999;
+        box-shadow: 2px 2px 5px #999;
+}
+
+.social {
+  padding:1px;
+}
+
+
+
+
